@@ -1,0 +1,313 @@
+body {
+    background: url(img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.div {
+    height: 14vw;
+    width: 50px;
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    margin-top: 15px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+.levels {
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.level {
+    /* 11.5 24.5  26 */
+    padding: 24.5px 45px; 
+    font-size: 28px;
+    background: rgb(255, 200, 97) url(img/closeLevel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: inset  0 -8px 0 rgb(234, 178, 75) ;
+    transition: background-color box-shadow .2s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.level:hover {
+    background: rgb(236, 176, 65) url(img/closeLevel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -87px;
+    box-shadow: inset 0 -4px 0  rgb(215, 161, 61) ;
+
+}
+
+.level-unlock {
+    background: rgb(255, 200, 97);
+
+}
+
+.level-unlock:hover {
+    background: rgb(236, 176, 65);
+
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 400px;
+    font-size: 70px;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
+
+.you-win {
+    /* background: #eae71f13; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 100px;
+    z-index: 1000;
+    color: rgb(25, 177, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.level-ready {
+    display: none;
+    position: absolute;
+    top: 305px;
+    left: 290px;
+    font-size: 40px;
+    text-shadow: 0 0 15px rgb(141, 255, 141);
+}
+.level.active2 {
+    transform: scale(110%);
+    border: 2px solid #ff8527;
+}
+.level-super-easy-ready {
+ top: 11px;
+
+}
+
+
+.level-easy-ready {
+    top: 110px;
+
+   }
+
+   .level-super-normal-ready {
+       top: 312px;
+       
+    }
+    
+    .level-normal-ready {
+        top: 213px;
+        
+   }
+
+   .level-hard-ready {
+    top: 411px;
+
+   }
+
+   .level-super-hard-ready {
+    top: 513px;
+
+   }
+
+   .level-super-mega-hard {
+   font-size: 24px;
+   background-color: #7a6666;
+   box-shadow: inset 0 -8px 0  rgb(27, 26, 25) ;
+   }
+
+   .level-super-mega-hard:hover {
+    font-size: 24px;
+    background-color: #4d4646;
+    box-shadow: inset 0 -4px 0  rgb(27, 26, 25) ;
+    }
+
+   .level {
+
+   }
+
+   .close {
+    left: 2000px;
+    top: 60px;
+    position: absolute;
+    display: none;
+    z-index: 1000000;
+   }
+
+   .level {
+    position: relative;
+   }
+
+   .amount {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: black;
+    border-radius: 100px;
+    color: white;
+    padding: 2px 4px;
+    font-size: 14px;
+   }
+
+   .zoom {
+    zoom: 0.32;
+   }
+
+   .zoom2 {
+    zoom: 0.23;
+   }
+
+   .level[disabled] {
+    color: black;
+   }
+
+   .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+   }
+
+   .passwordBlock {
+    /* left:1000px ;
+    top:150px ;
+    position: absolute; */
+    background: #5d5454;
+    border-radius: 10px;
+    width: 650px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+       }
+
+   .btn {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    border-radius: 100%;
+   }
+
+   .btn:hover {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    border-radius: 100%;
+    background: #908484;
+   }
+
+   .password {
+    width: 100%;
+    font-size: 200px;
+    line-height: 0;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+   }
+   
+   .level-super-mega-hard-ready {
+    top: 615px;
+   }
+
+   .notTrue {
+    color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: 35%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    height: 90vh;
+   }
+
+
+   .timer {
+    color: white;
+    right: 100px;
+    top: 100px;
+    position: absolute;
+    display: none;
+   }
+
+   .youLost {
+        /* background: #eae71f13; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 100px;
+    z-index: 1000;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   }

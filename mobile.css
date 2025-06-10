@@ -1,0 +1,27 @@
+@media screen and (max-width: 1000px) {
+    .levels {
+        left: calc(50% - 140px);
+        top: 20px;
+        zoom: 50%;
+    }
+    .close {
+        right: 0px;
+        left: auto;
+        top: 0px;
+        font-size: 30px;
+    }
+    .div {
+        font-size: 65px;
+    }
+    body {
+        padding: 30px!important;
+    }
+    .passwordBlock {
+        zoom: 40%;
+    }
+    .timer {
+        top: 0px;
+        right:40%;
+        font-size: 30px;
+    }
+}
