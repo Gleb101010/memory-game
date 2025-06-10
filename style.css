@@ -4,7 +4,9 @@ body {
     background-size: cover;
     height: 100vh;
 }
-
+.text-info {
+    display: none;
+}
 
 * {
     box-sizing: border-box;
